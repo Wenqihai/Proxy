@@ -1,0 +1,15 @@
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\ProxyConsole\bin\Debug\ProxyConsole.exe
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\ProxyConsole\bin\Debug\ProxyConsole.pdb
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\ProxyConsole\bin\Debug\IProxy.dll
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\ProxyConsole\bin\Debug\Mentalis.dll
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\ProxyConsole\bin\Debug\IProxy.pdb
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\ProxyConsole\bin\Debug\Mentalis.pdb
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\ProxyConsole\obj\Debug\ProxyConsole.csprojResolveAssemblyReference.cache
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\ProxyConsole\obj\Debug\ProxyConsole.exe
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\ProxyConsole\obj\Debug\ProxyConsole.pdb
+D:\温启海的文件夹\开发\Proxy\ProxyConsole\obj\Debug\ProxyConsole.exe
+D:\温启海的文件夹\开发\Proxy\ProxyConsole\obj\Debug\ProxyConsole.pdb
+D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Debug\ProxyConsole.exe
+D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Debug\ProxyConsole.pdb
+D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Debug\IProxy.dll
+D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Debug\IProxy.pdb

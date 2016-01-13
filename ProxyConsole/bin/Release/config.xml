@@ -1,0 +1,9 @@
+<MentalisProxy>
+  <Version value="1.0" />
+  <Settings />
+  <Users>
+  </Users>
+  <Listeners>
+    <listener type="Org.Mentalis.Proxy.Http.HttpListener" value="host:127.0.0.1;int:8080" />
+  </Listeners>
+</MentalisProxy>

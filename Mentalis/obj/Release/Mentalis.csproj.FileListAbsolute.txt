@@ -1,0 +1,11 @@
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\Mentalis\bin\Release\Mentalis.dll
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\Mentalis\bin\Release\Mentalis.pdb
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\Mentalis\obj\Release\Mentalis.dll
+D:\温启海的文件夹\项目\Proxy\Proxy\ProxyClient\Mentalis\obj\Release\Mentalis.pdb
+D:\温启海的文件夹\开发\Proxy\Mentalis\bin\Release\Mentalis.dll
+D:\温启海的文件夹\开发\Proxy\Mentalis\bin\Release\Mentalis.pdb
+D:\温启海的文件夹\开发\Proxy\Mentalis\bin\Release\IProxy.dll
+D:\温启海的文件夹\开发\Proxy\Mentalis\bin\Release\IProxy.pdb
+D:\温启海的文件夹\开发\Proxy\Mentalis\obj\Release\Mentalis.csprojResolveAssemblyReference.cache
+D:\温启海的文件夹\开发\Proxy\Mentalis\obj\Release\Mentalis.dll
+D:\温启海的文件夹\开发\Proxy\Mentalis\obj\Release\Mentalis.pdb

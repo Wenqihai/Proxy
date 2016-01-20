@@ -6,3 +6,8 @@ D:\温启海的文件夹\开发\Proxy\IProxy\bin\Debug\IProxy.dll
 D:\温启海的文件夹\开发\Proxy\IProxy\bin\Debug\IProxy.pdb
 D:\温启海的文件夹\开发\Proxy\IProxy\obj\Debug\IProxy.dll
 D:\温启海的文件夹\开发\Proxy\IProxy\obj\Debug\IProxy.pdb
+C:\Users\wenqi\Documents\GitHub\Proxy\IProxy\bin\Debug\IProxy.dll
+C:\Users\wenqi\Documents\GitHub\Proxy\IProxy\bin\Debug\IProxy.pdb
+C:\Users\wenqi\Documents\GitHub\Proxy\IProxy\obj\Debug\IProxy.dll
+C:\Users\wenqi\Documents\GitHub\Proxy\IProxy\obj\Debug\IProxy.pdb
+C:\Users\wenqi\Documents\GitHub\Proxy\IProxy\obj\Debug\Updater.csprojResolveAssemblyReference.cache

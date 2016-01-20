@@ -45,6 +45,7 @@ using Org.Mentalis.Proxy.Socks.Authentication;
 using Org.Mentalis.Utilities.ConsoleAttributes;
 using Proxy.IProxy;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace Org.Mentalis.Proxy
 {
@@ -75,8 +76,12 @@ namespace Org.Mentalis.Proxy
     /// <summary>
     /// Defines the class that controls the settings and listener objects.
     /// </summary>
-    public class Proxy :  IProxy
+    public class Proxy : IProxy
     {
+        private DateTime beginTime;
+        private string ip;
+        private int port;
+        private int port2;
         /// <summary>
         /// Initializes a new Proxy instance.
         /// </summary>
@@ -95,22 +100,60 @@ namespace Org.Mentalis.Proxy
 
         public void Run()
         {
+            string ip = null;
+            int port;
+            int port2;
+            DateTime beginTime = DateTime.Now;
             while (true)
             {
-                string ip = GetIp();
-                ip = "127.0.0.1";
+                ip = GetIp();
                 Console.WriteLine("IP:" + ip);
                 Random random = new Random((int)DateTime.Now.Ticks);
-                int port = random.Next(10000, 65536);
-                Start(ip, port, ProxyType.Http);
                 port = random.Next(10000, 65536);
-                Start(ip, port, ProxyType.Socks);
+                Start(ip, port, ProxyType.Http);
+                port2 = random.Next(10000, 65536);
+                Start(ip, port2, ProxyType.Socks);
                 string[] rdStrs = GetRandomStrs(4, 2);
                 AddUser(rdStrs[0], rdStrs[1]);
+                beginTime = DateTime.Now;
                 Console.WriteLine("User:{0} Pass:{1}", rdStrs[0], rdStrs[1]);
-                Thread.Sleep(6 * 1000);
-                Stop();
+                Console.WriteLine(Submit(ip, port, port2, rdStrs[0], rdStrs[1]));
+                Thread.Sleep(3000);
             }
+        }
+
+
+        private void Delete(string ip, int port)
+        {
+            try
+            {
+                var request = WebRequest.Create(string.Format("http://118.193.131.17/service/Delete?ip={0}&port={1}", ip, port));
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        public string Submit(string ip, int port, int port2, string name = "", string pwd = "")
+        {
+            try
+            {
+                var request = WebRequest.Create(string.Format("http://118.193.131.17/service/Submit?ip={0}&port={1}&port2={2}&name={3}&pwd={4}", ip, port, port2, name, pwd));
+                using (var stream = request.GetResponse().GetResponseStream())
+                {
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        return reader.ReadToEnd();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
+
         }
         public static string GetIp()
         {
@@ -558,5 +601,13 @@ namespace Org.Mentalis.Proxy
         private ProxyConfig m_Config;
         /// <summary>Holds the value of the Listeners property.</summary>
         private ArrayList m_Listeners = new ArrayList();
+
+        [DllImport("winInet.dll ")]
+        private static extern bool InternetCheckConnection(string url, int dwFlag, int dwReserved);
+        private bool CheckConnection()
+        {
+            return InternetCheckConnection(null, 0x00000001, 0);
+        }
     }
+
 }

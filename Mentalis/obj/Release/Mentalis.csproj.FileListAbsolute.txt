@@ -9,3 +9,10 @@ D:\温启海的文件夹\开发\Proxy\Mentalis\bin\Release\IProxy.pdb
 D:\温启海的文件夹\开发\Proxy\Mentalis\obj\Release\Mentalis.csprojResolveAssemblyReference.cache
 D:\温启海的文件夹\开发\Proxy\Mentalis\obj\Release\Mentalis.dll
 D:\温启海的文件夹\开发\Proxy\Mentalis\obj\Release\Mentalis.pdb
+C:\Users\wenqi\Documents\GitHub\Proxy\Mentalis\bin\Release\Mentalis.dll
+C:\Users\wenqi\Documents\GitHub\Proxy\Mentalis\bin\Release\Mentalis.pdb
+C:\Users\wenqi\Documents\GitHub\Proxy\Mentalis\bin\Release\IProxy.dll
+C:\Users\wenqi\Documents\GitHub\Proxy\Mentalis\bin\Release\IProxy.pdb
+C:\Users\wenqi\Documents\GitHub\Proxy\Mentalis\obj\Release\Mentalis.csprojResolveAssemblyReference.cache
+C:\Users\wenqi\Documents\GitHub\Proxy\Mentalis\obj\Release\Mentalis.dll
+C:\Users\wenqi\Documents\GitHub\Proxy\Mentalis\obj\Release\Mentalis.pdb

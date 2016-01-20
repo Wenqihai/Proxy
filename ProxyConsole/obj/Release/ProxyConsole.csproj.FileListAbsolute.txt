@@ -12,3 +12,11 @@ D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Release\ProxyConsole.pdb
 D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Release\IProxy.dll
 D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Release\IProxy.pdb
 D:\温启海的文件夹\开发\Proxy\ProxyConsole\obj\Release\ProxyConsole.csprojResolveAssemblyReference.cache
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\obj\Release\ProxyConsole.exe
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\obj\Release\ProxyConsole.pdb
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Release\ProxyConsole.exe.config
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\obj\Release\ProxyConsole.csprojResolveAssemblyReference.cache
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Release\ProxyConsole.exe
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Release\ProxyConsole.pdb
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Release\IProxy.dll
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Release\IProxy.pdb

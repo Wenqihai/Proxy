@@ -13,3 +13,13 @@ D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Debug\ProxyConsole.exe
 D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Debug\ProxyConsole.pdb
 D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Debug\IProxy.dll
 D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Debug\IProxy.pdb
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Debug\ProxyConsole.exe.config
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\obj\Debug\ProxyConsole.exe
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\obj\Debug\ProxyConsole.pdb
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Debug\ProxyConsole.exe
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Debug\ProxyConsole.pdb
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Debug\IProxy.dll
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Debug\IProxy.pdb
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\obj\Debug\ProxyConsole.csprojResolveAssemblyReference.cache
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Debug\Mentalis.dll
+C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Debug\Mentalis.pdb

@@ -20,3 +20,6 @@ C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Release\ProxyConsole.exe
 C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Release\ProxyConsole.pdb
 C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Release\IProxy.dll
 C:\Users\wenqi\Documents\GitHub\Proxy\ProxyConsole\bin\Release\IProxy.pdb
+D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Release\ProxyConsole.exe.config
+D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Release\Mentalis.dll
+D:\温启海的文件夹\开发\Proxy\ProxyConsole\bin\Release\Mentalis.pdb

@@ -1,0 +1,9 @@
+D:\温启海的文件夹\开发\Proxy\ProxyService\bin\Release\ProxyService.exe
+D:\温启海的文件夹\开发\Proxy\ProxyService\bin\Release\ProxyService.pdb
+D:\温启海的文件夹\开发\Proxy\ProxyService\obj\Release\ProxyService.ProjectInstaller.resources
+D:\温启海的文件夹\开发\Proxy\ProxyService\obj\Release\ProxyService.csproj.GenerateResource.Cache
+D:\温启海的文件夹\开发\Proxy\ProxyService\obj\Release\ProxyService.exe
+D:\温启海的文件夹\开发\Proxy\ProxyService\obj\Release\ProxyService.pdb
+D:\温启海的文件夹\开发\Proxy\ProxyService\bin\Release\IProxy.dll
+D:\温启海的文件夹\开发\Proxy\ProxyService\bin\Release\IProxy.pdb
+D:\温启海的文件夹\开发\Proxy\ProxyService\obj\Release\ProxyService.csprojResolveAssemblyReference.cache

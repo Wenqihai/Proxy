@@ -6,3 +6,4 @@ C:\Users\wenqi\Documents\GitHub\Proxy\IProxy\bin\Release\IProxy.dll
 C:\Users\wenqi\Documents\GitHub\Proxy\IProxy\bin\Release\IProxy.pdb
 C:\Users\wenqi\Documents\GitHub\Proxy\IProxy\obj\Release\IProxy.dll
 C:\Users\wenqi\Documents\GitHub\Proxy\IProxy\obj\Release\IProxy.pdb
+D:\温启海的文件夹\开发\Proxy\IProxy\obj\Release\Updater.csprojResolveAssemblyReference.cache

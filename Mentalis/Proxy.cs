@@ -82,6 +82,7 @@ namespace Org.Mentalis.Proxy
         private string ip;
         private int port;
         private int port2;
+        private object syncRoot = new object();
         /// <summary>
         /// Initializes a new Proxy instance.
         /// </summary>
@@ -89,7 +90,7 @@ namespace Org.Mentalis.Proxy
         public Proxy(string file)
         {
             Config = new ProxyConfig(this, file);
-            if (System.IO.File.Exists(Config.File))
+            if (File.Exists(Config.File))
                 Config.LoadData();
         }
 
@@ -100,60 +101,112 @@ namespace Org.Mentalis.Proxy
 
         public void Run()
         {
-            string ip = null;
-            int port;
-            int port2;
-            DateTime beginTime = DateTime.Now;
-            while (true)
+            Thread thread = new Thread(() =>
+              {
+                  while (true)
+                  {
+                      if (!CheckConnection())
+                      {
+                          while (true)
+                          {
+                              if (Restart())
+                              {
+                                  break;
+                              }
+                              else
+                              {
+                                  Thread.Sleep(3000);
+                              }
+                          }
+                      }
+                      else
+                      {
+                          if ((DateTime.Now - beginTime).TotalMinutes > 20)
+                          {
+                              Restart();
+                          }
+                      }
+                      Thread.Sleep(3000);
+                  }
+              });
+            thread.Start();
+        }
+
+        public bool Start()
+        {
+            try
             {
-                ip = GetIp();
-                Console.WriteLine("IP:" + ip);
+                if (!CheckConnection())
+                {
+                    return false;
+                }
+                string newIp = GetIp();
                 Random random = new Random((int)DateTime.Now.Ticks);
-                port = random.Next(10000, 65536);
-                Start(ip, port, ProxyType.Http);
-                port2 = random.Next(10000, 65536);
-                Start(ip, port2, ProxyType.Socks);
+                int newPort = random.Next(10000, 65536);
+                int newPort2 = random.Next(10000, 65536);
+                Start(newIp, newPort, ProxyType.Http);
+                Start(newIp, newPort2, ProxyType.Socks);
                 string[] rdStrs = GetRandomStrs(4, 2);
                 AddUser(rdStrs[0], rdStrs[1]);
+                ip = newIp;
+                port = newPort;
+                port2 = newPort2;
                 beginTime = DateTime.Now;
+                Console.WriteLine("IP:" + ip);
                 Console.WriteLine("User:{0} Pass:{1}", rdStrs[0], rdStrs[1]);
                 Console.WriteLine(Submit(ip, port, port2, rdStrs[0], rdStrs[1]));
-                Thread.Sleep(3000);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+        public bool Restart()
+        {
+            try
+            {
+                if (ip != null)
+                {
+                    Stop();
+                    Delete(ip, port);
+                    Delete(ip, port2);
+                    ip = null;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+
+            if (!Start())
+            {
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
 
 
         private void Delete(string ip, int port)
         {
-            try
-            {
-                var request = WebRequest.Create(string.Format("http://118.193.131.17/service/Delete?ip={0}&port={1}", ip, port));
-
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            var request = WebRequest.Create(string.Format("http://118.193.131.17/service/Delete?ip={0}&port={1}", ip, port));
+            request.GetResponse();
         }
 
         public string Submit(string ip, int port, int port2, string name = "", string pwd = "")
         {
-            try
+            var request = WebRequest.Create(string.Format("http://118.193.131.17/service/Submit?ip={0}&port={1}&port2={2}&name={3}&pwd={4}", ip, port, port2, name, pwd));
+            using (var stream = request.GetResponse().GetResponseStream())
             {
-                var request = WebRequest.Create(string.Format("http://118.193.131.17/service/Submit?ip={0}&port={1}&port2={2}&name={3}&pwd={4}", ip, port, port2, name, pwd));
-                using (var stream = request.GetResponse().GetResponseStream())
+                using (StreamReader reader = new StreamReader(stream))
                 {
-                    using (StreamReader reader = new StreamReader(stream))
-                    {
-                        return reader.ReadToEnd();
-                    }
+                    return reader.ReadToEnd();
                 }
             }
-            catch (Exception e)
-            {
-                return e.Message;
-            }
-
         }
         public static string GetIp()
         {
@@ -606,7 +659,7 @@ namespace Org.Mentalis.Proxy
         private static extern bool InternetCheckConnection(string url, int dwFlag, int dwReserved);
         private bool CheckConnection()
         {
-            return InternetCheckConnection(null, 0x00000001, 0);
+            return InternetCheckConnection("http://www.baidu.com", 0x00000001, 0);
         }
     }
 

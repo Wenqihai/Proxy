@@ -24,7 +24,7 @@ namespace ProxyConsole
                     dir += @"\";
                 object obj = Activator.CreateInstance(tp, dir + "config.xml");
                 var prx = (IProxy)obj;
-                //prx = new Org.Mentalis.Proxy.Proxy(dir + "config.xml");
+                prx = new Org.Mentalis.Proxy.Proxy(dir + "config.xml");
                 prx.Run();
                 prx.Menu();
             }

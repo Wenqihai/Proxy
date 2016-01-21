@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Updater", "..\IProxy\Update
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mentalis", "..\Mentalis\Mentalis.csproj", "{70E83E3B-5223-4D9F-9400-75B35798FC2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyService", "..\ProxyService\ProxyService.csproj", "{C4945FD5-1C44-4181-AEF2-52232A07126B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{70E83E3B-5223-4D9F-9400-75B35798FC2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70E83E3B-5223-4D9F-9400-75B35798FC2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70E83E3B-5223-4D9F-9400-75B35798FC2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4945FD5-1C44-4181-AEF2-52232A07126B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4945FD5-1C44-4181-AEF2-52232A07126B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4945FD5-1C44-4181-AEF2-52232A07126B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4945FD5-1C44-4181-AEF2-52232A07126B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
